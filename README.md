@@ -17,6 +17,10 @@ A fun, colorful two-player Tic Tac Toe game playable right in the terminal using
 Install dependencies with:
 
 ```bash
-pip install colorama
-![Game Title Display & Player Input](".\images\Screenshot 2025-04-11 205139.png")
-![Playing & Winning Screen](".\images\Screenshot 2025-04-11 205225.png")
+## 📸 Screenshots
+
+### Game Title Display & Player Input  
+![Game Title Display & Player Input](./images/Screenshot%202025-04-11%20205139.png)
+
+### Playing & Winning Screen  
+![Playing & Winning Screen](./images/Screenshot%202025-04-11%20205225.png)
