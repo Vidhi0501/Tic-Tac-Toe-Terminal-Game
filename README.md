@@ -18,7 +18,7 @@ A fun, colorful two-player Tic Tac Toe game playable right in the terminal using
 ## 📸 Screenshots
 
 ### Game Title Display & Player Input  
-![Game Title Display & Player Input](./images/Screenshot%202025-04-11%20205139.png)
+![Game Title Display & Player Input](Screenshot%202025-04-11%20205139.png)
 
 ### Playing & Winning Screen  
-![Playing & Winning Screen](./images/Screenshot%202025-04-11%20205225.png)
+![Playing & Winning Screen](Screenshot%202025-04-11%20205225.png)
