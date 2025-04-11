@@ -1,9 +1,10 @@
 import os
 import time
 from colorama import Fore, Style, init
+from pyfiglet import Figlet
 
 # Initialize colors
-init()
+init(autoreset=True)
 
 class TicTacToe:
     def __init__(self):
@@ -15,9 +16,11 @@ class TicTacToe:
         
     def get_player_names(self):
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(Fore.CYAN + "=== Welcome to Tic Tac Toe ===" + Style.RESET_ALL)
-        self.player1_name = input("\nEnter first player's name (X): ")
-        self.player2_name = input("Enter second player's name (O): ")
+        figlet = Figlet(font='big')
+        print(Fore.GREEN + Style.BRIGHT + figlet.renderText("TIC TAC TOE") + Style.RESET_ALL)
+
+        self.player1_name = input(Fore.CYAN + "\nEnter first player's name (X): " + Style.RESET_ALL)
+        self.player2_name = input(Fore.MAGENTA + "Enter second player's name (O): " + Style.RESET_ALL)
 
     def display_board(self):
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -65,6 +68,11 @@ class TicTacToe:
         
         return None
 
+    def show_congratulations(self, winner_name):
+        figlet = Figlet(font='small')  # Small font to keep single line
+        message = f"Congratulations! {winner_name}, you won!"
+        print(Fore.YELLOW + Style.BRIGHT + figlet.renderText(message) + Style.RESET_ALL)
+
     def play_game(self):
         self.get_player_names()
         
@@ -93,10 +101,10 @@ class TicTacToe:
                     if winner:
                         self.display_board()
                         if winner == "Tie":
-                            print("\nGame is a Tie!")
+                            print(Fore.YELLOW + "\nGame is a Tie!" + Style.RESET_ALL)
                         else:
                             winner_name = self.player1_name if winner == "X" else self.player2_name
-                            print(f"\n🎉 Congratulations! {winner_name} has won! 🎉")
+                            self.show_congratulations(winner_name)
                             if winner == "X":
                                 self.player1_score += 1
                             else:
@@ -115,4 +123,4 @@ class TicTacToe:
 
 if __name__ == "__main__":
     game = TicTacToe()
-    game.play_game() 
+    game.play_game()
