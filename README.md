@@ -14,9 +14,7 @@ A fun, colorful two-player Tic Tac Toe game playable right in the terminal using
 - Python 3.x
 - colorama
 
-Install dependencies with:
 
-```bash
 ## 📸 Screenshots
 
 ### Game Title Display & Player Input  
