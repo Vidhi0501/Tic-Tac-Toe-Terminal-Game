@@ -18,4 +18,5 @@ Install dependencies with:
 
 ```bash
 pip install colorama
-![alt text](image-1.png)
+![Game Title Display & Player Input](".\images\Screenshot 2025-04-11 205139.png")
+![Playing & Winning Screen](".\images\Screenshot 2025-04-11 205225.png")
